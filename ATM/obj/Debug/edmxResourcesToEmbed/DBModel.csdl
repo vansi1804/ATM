@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ATMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountCode" />
+    </Key>
+    <Property Name="AccountCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pass_word" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Balance" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Withdraws" Relationship="Self.FK__Withdraw__Accoun__25869641" FromRole="Account" ToRole="Withdraw" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Withdraw">
+    <Key>
+      <PropertyRef Name="WithdrawCode" />
+    </Key>
+    <Property Name="WithdrawCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WithdrawDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WithdrawAmount" Type="Int32" Nullable="false" />
+    <Property Name="AccountCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Account" Relationship="Self.FK__Withdraw__Accoun__25869641" FromRole="Withdraw" ToRole="Account" />
+  </EntityType>
+  <Association Name="FK__Withdraw__Accoun__25869641">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Withdraw" Type="Self.Withdraw" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountCode" />
+      </Principal>
+      <Dependent Role="Withdraw">
+        <PropertyRef Name="AccountCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ATMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Withdraws" EntityType="Self.Withdraw" />
+    <AssociationSet Name="FK__Withdraw__Accoun__25869641" Association="Self.FK__Withdraw__Accoun__25869641">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Withdraw" EntitySet="Withdraws" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,16 @@
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\ATM.exe.config
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\ATM.exe
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\ATM.pdb
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\EntityFramework.dll
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\EntityFramework.SqlServer.dll
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\EntityFramework.xml
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\bin\Debug\EntityFramework.SqlServer.xml
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.csproj.AssemblyReference.cache
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.Properties.Resources.resources
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.csproj.GenerateResource.cache
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.csproj.CoreCompileInputs.cache
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.exe
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.pdb
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.ChangePasswordForm.resources
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.LoginForm.resources
+D:\1A_3rdYear\Winform C#\ThucHanh\DeKiemTraGiuaKy\ATM\obj\Debug\ATM.WithdrawForm.resources
